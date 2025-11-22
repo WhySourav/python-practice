@@ -28,4 +28,8 @@ if pokemoninfo:
     print(f"ID: {pokemoninfo["id"]}")
     print(f"height: {pokemoninfo["height"]}")
     print(f"weight: {pokemoninfo["weight"]}")
-
+    print("Abilities:")
+    for abilities in pokemoninfo["abilities"]:
+        print(f"- {abilities['ability']['name']}")
+else:
+    print("soomething went wrong.")
